@@ -2,14 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\images",
-    "\\images\\demo",
-    "\\images\\demo\\backgrounds",
     "\\images\\portraits",
     "\\layout",
     "\\layout\\scripts",
     "\\layout\\styles",
+    "\\media",
     "\\pages"
   ],
-  "SelectedNode": "\\layout\\scripts\\jquery.backtotop.js",
+  "SelectedNode": "\\layout\\scripts\\sendMail.js",
   "PreviewInSolutionExplorer": false
 }

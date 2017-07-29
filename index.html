@@ -78,7 +78,7 @@ Licence URI: http://www.os-templates.com/template-terms
       <footer>
         <ul class="nospace inline pushright">
           <li><a class="btn inverse" href="media/Lebenslauf_SvenoWalder.pdf">resume</a></li>
-          <li><a class="btn" href="pages/under-construction.html">email</a></li>
+          <li><a id="submitmail" class="btn">email</a></li>
         </ul>
       </footer>
     </article>
@@ -202,16 +202,8 @@ Licence URI: http://www.os-templates.com/template-terms
           <legend>Newsletter:</legend>
           <input id="name" class="btmspace-15" type="text" value="" placeholder="Name">
           <input id="email" class="btmspace-15" type="text" value="" placeholder="Email">
-          <button value="submit" onclick="sendMail">Submit</button>
-            <script>function sendMail() {
-                    var link = "mailto:sveno.walder@gmail.com"
-                        + "&subject=" + escape("www.svenowalder.ch - request from ") + escape(document.getElementById(name))
-                        + "&body=" + escape("Type in your request:")
-                        ;
+          <button id="submit" type="submit" value="submit" onclick="sendMail">Submit</button>
 
-                    window.open = link;
-                    console.log(link);
-                }</script>
         </fieldset>
       </form>
     </div>
@@ -236,6 +228,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <script src="layout/scripts/jquery.min.js"></script>
 <script src="layout/scripts/jquery.backtotop.js"></script>
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script src="layout/scripts/sendMail.js"></script>
 <!-- IE9 Placeholder Support -->
 <script src="layout/scripts/jquery.placeholder.min.js"></script>
 <!-- / IE9 Placeholder Support -->
