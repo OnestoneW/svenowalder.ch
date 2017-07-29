@@ -200,9 +200,18 @@ Licence URI: http://www.os-templates.com/template-terms
       <form method="post" action="#">
         <fieldset>
           <legend>Newsletter:</legend>
-          <input class="btmspace-15" type="text" value="" placeholder="Name">
-          <input class="btmspace-15" type="text" value="" placeholder="Email">
-          <button type="submit" value="submit">Submit</button>
+          <input id="name" class="btmspace-15" type="text" value="" placeholder="Name">
+          <input id="email" class="btmspace-15" type="text" value="" placeholder="Email">
+          <button value="submit" onclick="sendMail">Submit</button>
+            <script>function sendMail() {
+                    var link = "mailto:sveno.walder@gmail.com"
+                        + "&subject=" + escape("www.svenowalder.ch - request from ") + escape(document.getElementById(name))
+                        + "&body=" + escape("Type in your request:")
+                        ;
+
+                    window.open = link;
+                    console.log(link);
+                }</script>
         </fieldset>
       </form>
     </div>

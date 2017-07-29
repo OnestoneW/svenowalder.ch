@@ -247,7 +247,6 @@ input:focus, textarea:focus, *:required:focus{border-color:#82A800;}
 /* Header */
 #header #logo a{color:inherit;}
 
-
 /* Page Intro */
 #pageintro article{color:#FFFFFF;}
 #pageintro article .introtxt{color:#000000; background-color:rgba(255,255,255,.75);}
@@ -384,4 +383,6 @@ table a, #comments a{background-color:inherit;}
 
 	.font-x2{font-size:1.4rem;}
 	.font-x3{font-size:1.6rem;}
+}
+
 }
