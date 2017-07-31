@@ -11,7 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function sendMail() {
-    var link = "mailto:sveno.walder@gmail.com?subject=www.svenowalder.ch%20-%20request%20from:%20";
+    var request_name = document.getElementById("request_name").value;
+    var request_email = document.getElementById("request_email").value;
+    var link = "mailto:sveno.walder@gmail.com?subject=www.svenowalder.ch%20-%20request%20from:%20" + request_name + " (" + request_email + ")";
     window.open(link);
     console.log("Submit button worked properly: " + link)
 }
